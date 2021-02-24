@@ -17,6 +17,8 @@
 
 /* Remove markers from lists */
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -97,11 +99,14 @@ header .logo-fragment {
   color: var(--black);
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 header .container {
   display: flex;
   align-items: center;
   min-height: 80px;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -175,14 +180,27 @@ header .address-item:last-child {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
-  padding-top: 199px;
-  padding-bottom: 200px;
+  /* padding-top: 199px;
+  padding-bottom: 200px; */
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #ececec;
 }
 
+.banner {
+  justify-content: center;
+  max-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-section {
+  margin: 0;
   padding: 0;
 }
 
@@ -277,6 +295,8 @@ header .address-item:last-child {
   color: var(--text-color);
 }
 
+/* Customers */
+
 /* portfolio */
 
 .buttons {
@@ -289,6 +309,8 @@ header .address-item:last-child {
 }
 
 .buttons .btn {
+  display: inline-flex;
+  background-color: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -298,6 +320,7 @@ header .address-item:last-child {
   padding: 6px 22px;
   margin: 0 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .btn:hover,
@@ -305,13 +328,15 @@ header .address-item:last-child {
 .btn:active {
   background-color: var(--accent-color);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: (-1 * var(--card-set-gap));
-  margin-top: (-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .card-set > .item {
@@ -320,8 +345,19 @@ header .address-item:last-child {
   margin-top: var(--card-set-gap);
 }
 
+.card-set .tumb {
+  height: 294px;
+}
+
+.card-set img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-content {
   padding: 24px 20px;
+  border: 1px solid #eeeeee;
 }
 
 .card-title {
