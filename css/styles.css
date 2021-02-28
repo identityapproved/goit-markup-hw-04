@@ -8,6 +8,7 @@
   --adress-transparency-color: rgba(255, 255, 255, 0.6);
   --card-set-gap: 30px;
   --icons-gray: #afb1b8;
+  --bg-gray: #f5f4fa;
 }
 
 *,
@@ -232,7 +233,7 @@ header .nav ul {
 
 .hero-title {
   padding-bottom: 30px;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -288,6 +289,7 @@ header .nav ul {
 
 .icon {
   padding: 25px 100px;
+  background-color: var(--bg-gray);
 }
 
 /* About */
@@ -306,6 +308,10 @@ header .nav ul {
 
 .team {
   padding-top: 94px;
+}
+
+.team-bg {
+  background-color: var(--bg-gray);
 }
 
 .team-list {
@@ -399,7 +405,7 @@ header .nav ul {
 
 .buttons .btn {
   display: inline-flex;
-  background-color: inherit;
+  background-color: var(--bg-gray);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
